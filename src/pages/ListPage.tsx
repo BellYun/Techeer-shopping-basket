@@ -18,8 +18,8 @@ export const ListPage = () => {
   //   //productList 받아오는 코드
   // },[])
 
-  // const handleAddProductCart = () =>{
-  //   //카트에  product 추가하는 코드
+// const handleAddProductCart = () =>{
+  //   //상태 관리 활용해서 카트에 product추가
   // }
 
   const productList:Iproduct[] = [

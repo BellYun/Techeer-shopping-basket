@@ -31,6 +31,7 @@ export const CartPage = () =>{
   // const handleOrderOnCart = () =>{
   //   //TODO: 카트에서 선택된 물품을 주문하는 코드 구현
   // }
+
   
   const cartItem = [
     {

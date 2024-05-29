@@ -23,7 +23,6 @@ export const DetailPage = () =>{
   // 카트에  product 추가하는 코드
   // }
 
-
   return(
       <div className="product-detail-container">
         <div className="flex-col-center w-520">

@@ -1,5 +1,5 @@
 export const Product = () =>{
-  const product =''
+
   return(
     <div className="cart-container">
               <div className="flex gap-15 mt-10">
@@ -11,7 +11,7 @@ export const Product = () =>{
                 />
                 <img
                   className="w-144 h-144"
-                  src={product}
+                  src={''}
                   alt="PET보틀-정사각(420ml)"
                 />
                 <span className="cart-name">PET보틀-정사각(420ml)</span>
