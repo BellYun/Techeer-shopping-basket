@@ -1,7 +1,6 @@
 .product-container {
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   gap: 20px;
   padding: 50px 240px;
@@ -20,10 +19,10 @@
 }
 
 .product-detail-container {
+  width: 1980px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-top: 50px;
 }
 
