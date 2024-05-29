@@ -3,10 +3,27 @@ import '../css/index.css'
 import product from '../assets/images/product.png'
 import '../css/common/nav.css'
 import '../css/page/product.css'
+// import { useEffect, useState } from 'react'
 
-
+// interface Iproduct {
+//   id:number,
+//   price:number,
+//   name:string,
+//   imageUrl:string
+// }
 
 export const DetailPage = () =>{
+
+  // const [ productInfo, setProductInfo ] = useState<Iproduct|null>(null);
+  // useEffect(()=>{
+  //   //api호출 함수
+  // },[])
+
+  // const handleAddProductCart = () =>{
+  // 카트에  product 추가하는 코드
+  // }
+
+
   return(
       <div className="product-detail-container">
         <div className="flex-col-center w-520">
