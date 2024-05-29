@@ -3,7 +3,7 @@ import '../css/common/nav.css'
 import { Product } from '../components/page/ListPage/Product'
 // import { useEffect, useState } from 'react'
 
-interface IproductList {
+interface Iproduct {
   id:number,
   price:number,
   name:string,
@@ -18,11 +18,11 @@ export const ListPage = () => {
   //   //productList 받아오는 코드
   // },[])
 
-// const handleAddProductCart = () =>{
-  //   //상태 관리 활용해서 카트에 product추가
+  // const handleAddProductCart = () =>{
+  //   //카트에  product 추가하는 코드
   // }
 
-  const productList:IproductList[] = [
+  const productList:Iproduct[] = [
     {
       "id": 1,
       "price": 10000,
