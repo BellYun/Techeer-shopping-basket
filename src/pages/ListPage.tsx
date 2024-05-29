@@ -1,10 +1,28 @@
 import '../css/index.css'
 import '../css/common/nav.css'
 import { Product } from '../components/page/ListPage/Product'
+// import { useEffect, useState } from 'react'
+
+interface IproductList {
+  id:number,
+  price:number,
+  name:string,
+  imageUrl:string
+}
 
 export const ListPage = () => {
 
-  const productList = [
+  // const [ productList, setProductList ] = useState<IproductList[]>([]);
+
+  // useEffect(()=>{
+  //   //productList 받아오는 코드
+  // },[])
+
+// const handleAddProductCart = () =>{
+  //   //상태 관리 활용해서 카트에 product추가
+  // }
+
+  const productList:IproductList[] = [
     {
       "id": 1,
       "price": 10000,
