@@ -1,4 +1,20 @@
-export const Product = () =>{
+import product from '../../../assets/images/product.png'
+import trash from '../../../assets/svgs/trash.svg'
+
+type Props ={
+  id:number,
+  name:string,
+  price:number,
+  number:number,
+  isChecked:boolean,
+  editChecked:(productId: number) => void,
+  editNumber:(productId: number, editNumber: number) => void,
+  deleteItem:(id: number) => void
+}
+
+export const Product = ({id,name,price,number,isChecked,editChecked,editNumber,deleteItem}:Props) =>{
+
+  
 
   return(
     <div className="cart-container">
@@ -7,29 +23,31 @@ export const Product = () =>{
                   className="checkbox"
                   name="checkbox"
                   type="checkbox"
-                  checked={true}
+                  onChange={()=>editChecked(id)}
+                  checked={isChecked}
                 />
                 <img
                   className="w-144 h-144"
-                  src={''}
+                  src={product}
                   alt="PET보틀-정사각(420ml)"
                 />
-                <span className="cart-name">PET보틀-정사각(420ml)</span>
+                <span className="cart-name">{name}</span>
               </div>
               <div className="flex-col-center justify-end gap-15">
                 <img
                   className="cart-trash-svg"
-                  src="./assets/svgs/trash.svg"
+                  src={trash}
                   alt="삭제"
+                  onClick={()=>deleteItem(id)}
                 />
                 <div className="number-input-container">
-                  <input type="number" className="number-input" value="1" />
+                  <input type="number" className="number-input" value={number} />
                   <div>
-                    <button className="number-input-button">▲</button>
-                    <button className="number-input-button">▼</button>
+                    <button className="number-input-button" onClick={()=>editNumber(id,number+1)}>▲</button>
+                    <button className="number-input-button" onClick={()=>editNumber(id,number-1)} disabled={number===1? true:false}>▼</button>
                   </div>
                 </div>
-                <span className="cart-price">123,456원</span>
+                <span className="cart-price">{price}원</span>
               </div>
             </div>
   )
