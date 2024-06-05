@@ -82,9 +82,6 @@ export const CartPage = () => {
     setCartItems(updatedCart);
     localStorage.setItem('cart', JSON.stringify(updatedCart));
   }
-
-  
-
   
   return (
     <section className="cart-section">
